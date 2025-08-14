@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ode Scintillante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #ffecec;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #c0392b;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      color: #e74c3c;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .contact {
+      background-color: #fff3f3;
+      padding: 40px 20px;
+      margin-top: 60px;
+      border-top: 2px solid #e74c3c;
+    }
+    .contact h2 {
+      text-align: center;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #e74c3c;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    form button:hover {
+      background-color: #c0392b;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffecec;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Travailler avec le cœur</h1>
+  </header>
+  <section>
+    <h2>Ode Scintillante : Quoi</h2>
+    <p>Ode Scintillante est une entreprise dont la vocation est d’aider des associations/fondations à augmenter leur visibilité, élargir leur zone d’intervention et obtenir plus de dotations.</p>
+    <h2>Ode Scintillante : Comment</h2>
+    <p>Grâce à un réseau, par la mise en place d’actions ciblées, par un fort relationnel, une forte détermination.</p>
+    <h2>Ode Scintillante : Pourquoi</h2>
+    <p>Car j’ai décidé de mettre mes compétences et connaissances relationnelles au service de valeurs fortes comme aider les enfants hospitalisés…</p>
+    <p><strong>Pourquoi choisir Ode Scintillante ?</strong></p>
+    <ul>
+      <li><strong>Pour les associations :</strong> Parce qu’il est parfois plus facile de parler entre chefs d’entreprise, et parce que je connais les rouages commerciaux. En tant qu’indépendante déterminée, je chercherai à me dépasser pour les associations dont les valeurs me correspondent.</li>
+      <li><strong>Pour les entreprises :</strong> Car faire un don à une association/fondation est déductible des impôts et constitue une "charge" pour l’entreprise.</li>
+    </ul>
+    <h2>Mon parcours</h2>
+    <p>Je suis Tiphaine, j’ai travaillé plus de 16 ans en tant que conseillère en assurances pour les entreprises. Ce qui m’a permis de rencontrer de nombreux chefs d’entreprise, de comprendre leur langage et de savoir comment les atteindre.</p>
+    <p>En devenant cheffe d’entreprise, j’ai compris que les autres chefs d’entreprise vous écoutent plus facilement qu’un salarié.</p>
+    <h2>Ma volonté</h2>
+    <p>La volonté d’Ode Scintillante est de contribuer à faire naître des étoiles dans les yeux des enfants hospitalisés ; d’être un renfort aux associations qui font déjà un travail formidable et difficile.</p>
+    <p>Pour ces enfants, voir leur rêve devenir réalité est une pause émotionnelle dans leur traitement, un regain d’énergie pour leur corps, une aide précieuse pour se sentir mieux.</p>
+  </section>
+  <section class="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Votre nom" required />
+      <input type="email" id="email" name="email" placeholder="Votre email" required />
+      <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  <footer>
+    © Ode Scintillante - Tous droits réservés
+  </footer>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Merci pour votre message ! Nous vous répondrons bientôt.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
